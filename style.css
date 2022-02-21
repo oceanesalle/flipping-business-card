@@ -43,3 +43,42 @@ body {
   animation :backgrounnd 7s ease infinite; 
   perspective: 800px;
 }
+
+.font h1 {
+  font-family: Satisfy, cursive;
+  font-size: 8rem; 
+  margin: 1rem 5rem; 
+  text-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2); 
+}
+
+h1,
+h2, 
+.fa-heart {
+  background: linear-gradient(178deg, #ef2f96, #ad2fed, #ad2fed, #d53070);
+  background-size: 600% 600%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  animation: background 7s ease infinite; 
+}
+
+@keyframes background {
+  0%,
+  100% {
+    background-position: 0% 13%;
+  }
+  50% {
+    background-position: 100% 88%;
+  }
+}
+p {
+  position:absolute;
+  top: 60%;
+  left: 10%;
+  color: rgba(255, 255, 255, 0.2); 
+  padding: 0.8rem 0 0.2rem 0.5rem; 
+}
+p:nth-of-type(2) {
+  opacity: 0;
+  transform: translate(-2rem);
+}
