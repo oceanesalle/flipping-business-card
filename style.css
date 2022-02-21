@@ -1,0 +1,45 @@
+body { 
+  background: #643a7a ;
+  font-family: "nunito", sans-serif;
+}
+
+.frame {
+  position: absolute; 
+  background-color: #201c29;
+  top: 50%; 
+  left: 50%; 
+  width: 400px;
+  height: 400px; 
+  margin-top: -200px; 
+  margin-left: -200px; 
+  border-radius: 2px; 
+  box-shadow: 0 5rem 1rem 1rem rgba(0, 0, 0, 0.6); 
+  overflow: hidden; 
+  -webkit-font-smoothing: antialiased; 
+  -moz-font-smoothing: grayscale; 
+}
+
+.frame
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-me { 
+  position:absolute; 
+  top: 30%; 
+  left: 77%;
+  font-size: 1 3rem;
+  transform: rotate(-90deg); 
+}
+
+.card {
+  width: 80%;
+  height: 40%; 
+  padding: 1rem; 
+  background: linear-gradient(178deg, #ef2f96, #ad2fed, #ad2fed, #d53070);
+  background-size: 600% 600%; 
+  animation :backgrounnd 7s ease infinite; 
+  perspective: 800px;
+}
