@@ -82,3 +82,50 @@ p:nth-of-type(2) {
   opacity: 0;
   transform: translate(-2rem);
 }
+
+.hvr-outline-in {
+  position: relative;
+}
+
+.hvr-outline-in:before {
+  content: "";
+  position:absolute;
+  border: 1px solid #ad2fed;
+  top: -16px; 
+  right: -16px; 
+  bottom: -16px; 
+  left: -16px; 
+  opacity: 0;
+}
+.hvr-outline-in:hover:before,
+.hvr-outline-in:focus:before,
+.hvr-outline-in:active:before {
+  top: -8px; 
+  right: -8px; 
+  bottom: -8px; 
+  left: -8px; 
+  opacity: 1;
+  transform: rotate(135deg) scale(3); 
+  transition: 0.3s;
+}
+
+.card:hover .flip {
+  transform: rotateX(180deg) translate3d(0, 0, 0);
+  box-shadow: 8px -10px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.flip {
+  transform-style: preserve-3d;
+  transition: all 0.7s ease-in-out;
+  perspective: 1000px;
+}
+
+.front, 
+.back {
+  backface-visibility: hidden;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: #201c29;
+}
+
