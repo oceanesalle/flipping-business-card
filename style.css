@@ -176,3 +176,39 @@ p:nth-of-type(2) {
   background: rgba(255, 255, 255, 0.4);
   position: absolute;
 }
+
+.line-1 {
+  top: 85%; 
+}
+
+.line-2 {
+  top: 13px;
+}
+
+.line-1, 
+.line-2 {
+  left: 82.5%; 
+  transform: rotate(-90deg);
+  background: purple;
+  width: 3rem;
+}
+
+.line-3 {
+  top: 45%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+.social {
+  font-size: 1.3rem; 
+  color: rgba(255, 255, 255, 0.4); 
+}
+
+.social i {
+  padding: 0 0.5rem;
+}
+
+.social i:hover {
+  color: rgba(255, 255, 255, 0.7); 
+  cursor: pointer;
+}
